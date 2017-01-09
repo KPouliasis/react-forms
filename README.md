@@ -27,3 +27,4 @@
 ### Abstract Data Types (ADTs) and Data Structures (DSs)
 
 * [Lecture: Data Structures IA (Logic & Machines)](https://youtu.be/VCTOBQrpI3s)
+* [Lecture: Data Structures IB (Encodings, ADTs, DSs)](https://youtu.be/kYJ5loujvwY)
