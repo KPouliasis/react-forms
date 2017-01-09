@@ -28,3 +28,5 @@
 
 * [Lecture: Data Structures IA (Logic & Machines)](https://youtu.be/VCTOBQrpI3s)
 * [Lecture: Data Structures IB (Encodings, ADTs, DSs)](https://youtu.be/kYJ5loujvwY)
+* Lecture: Data Structures II (scheduled for 1/10)
+* [Review: Data Structures I & II (Q, LL, BST, HT)](https://youtu.be/96J_nObHWe0)
