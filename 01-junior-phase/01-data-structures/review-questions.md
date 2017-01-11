@@ -6,7 +6,7 @@
   * MIT?
   * VisuAlgo.net
   * CLRS (Cormen et al — very mathy / proofy one)
-  * Skiena (sp?) — Algorithm Design Manual
+  * Skiena — Algorithm Design Manual (still long and detailed, but slightly more approachable)
     * Lectures online: http://www3.cs.stonybrook.edu/~skiena/
   * Cracking the Code Interview (probably should get this in any case!)
 
@@ -33,5 +33,5 @@
   * dot notation calls (`this` is the object to the left of the dot)
   * some builtins take a param for `this`. Example:
     - `[1, 2, 3].forEach(function (num) { ... }, context)`
-  * ARROW FUNCS: (param1, param2) => param1 + param2
+  * arrow functions: `(param1, param2) => param1 + param2`
     - _totally different_ from the above. All other methods of setting `this` are _dynamic_ — changes according to _how the function is called._ In arrow functions, `this` is inherited from whatever the surrounding scope's `this` is currently set to.
