@@ -30,3 +30,7 @@
 * [Lecture: Data Structures IB (Encodings, ADTs, DSs, Q, LL)](https://youtu.be/kYJ5loujvwY)
 * [Lecture: Data Structures II (BST, HT)](https://youtu.be/fJC6U27QoFc)
 * [Review: Data Structures I & II (Q, LL, BST, HT)](https://youtu.be/96J_nObHWe0)
+
+### Selector.js
+
+* [Lecture: Intro to the DOM](https://youtu.be/iXPuFAmTaNQ)
