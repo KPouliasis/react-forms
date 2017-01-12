@@ -29,7 +29,7 @@
 * [Lecture: Data Structures IA (Logic & Machines)](https://youtu.be/VCTOBQrpI3s)
 * [Lecture: Data Structures IB (Encodings, ADTs, DSs, Q, LL)](https://youtu.be/kYJ5loujvwY)
 * [Lecture: Data Structures II (BST, HT)](https://youtu.be/fJC6U27QoFc)
-* [Review: Data Structures I & II (Q, LL, BST, HT)](https://youtu.be/96J_nObHWe0)
+* [Video Review: Data Structures I & II (Q, LL, BST, HT)](https://youtu.be/96J_nObHWe0)
 
 ### Selector.js
 
@@ -38,3 +38,4 @@
 ### Sorting and Algorithm Analysis
 
 * [Lecture: Algorithms and Heuristics, Big O, Bubble and Merge Sort](https://youtu.be/6kYTVg4bHzQ)
+* [Video Review: Sorting and TDD](https://www.youtube.com/watch?v=Dz0NkaBp-FM)
