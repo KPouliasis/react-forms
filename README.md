@@ -34,3 +34,7 @@
 ### Selector.js
 
 * [Lecture: Intro to the DOM](https://youtu.be/iXPuFAmTaNQ)
+
+### Sorting and Algorithm Analysis
+
+* [Lecture: Algorithms and Heuristics, Big O, Bubble and Merge Sort](https://youtu.be/6kYTVg4bHzQ)
