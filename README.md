@@ -34,8 +34,14 @@
 ### Selector.js
 
 * [Lecture: Intro to the DOM](https://youtu.be/iXPuFAmTaNQ)
+* [Review Video](https://www.youtube.com/watch?v=WhVEZPsOP4I)
+* [Live Q & A](https://youtu.be/heg_OEcikgY)
 
 ### Sorting and Algorithm Analysis
 
 * [Lecture: Algorithms and Heuristics, Big O, Bubble and Merge Sort](https://youtu.be/6kYTVg4bHzQ)
 * [Video Review: Sorting and TDD](https://www.youtube.com/watch?v=Dz0NkaBp-FM)
+
+### Game of Life
+
+* [Lecture](https://youtu.be/1X-OFzVegGg)
