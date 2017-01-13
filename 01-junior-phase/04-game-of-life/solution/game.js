@@ -96,11 +96,6 @@ var gameOfLife = {
 
         // once html elements are added to the page, attach events to them
         this.setupBoardEvents();
-
-        // TODO: Make sure you remove this.
-        this.utils.setCellStatus(this.utils.selectCell(4, 4), 'alive');
-        this.utils.setCellStatus(this.utils.selectCell(5, 4), 'alive');
-        this.utils.setCellStatus(this.utils.selectCell(6, 4), 'alive');
     },
 
     forEachCell: function (iteratorFunc) {
