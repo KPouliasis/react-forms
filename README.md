@@ -45,3 +45,4 @@
 ### Game of Life
 
 * [Lecture](https://youtu.be/1X-OFzVegGg)
+* [Live Review](https://youtu.be/LgYFahVv6nA)
