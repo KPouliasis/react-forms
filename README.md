@@ -2,6 +2,12 @@
 
 * [Name Game](https://youtu.be/TBOC_PQRyNs)
 
+## CodeWars
+
+* [Gist of Foundations practice problems](https://gist.github.com/joedotjs/7614f84264bf20e49d39)
+* [For the Sake of Argument](https://www.youtube.com/watch?v=usyFqZQzM4U)
+* [Sum Array with Reduce](https://www.youtube.com/watch?v=qRwD2RueqJM)
+
 ## Foundations
 
 ### Fullstack Test First Solution Videos:
