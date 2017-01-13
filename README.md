@@ -46,3 +46,7 @@
 
 * [Lecture](https://youtu.be/1X-OFzVegGg)
 * [Live Review](https://youtu.be/LgYFahVv6nA)
+
+### Introduction to Node.js
+
+* [Lecture](https://youtu.be/pdcNepwem1M)
