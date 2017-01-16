@@ -56,6 +56,6 @@
 ### Node-Shell
 
 * [Lecture: Introduction to node.js](https://youtu.be/pdcNepwem1M)
-* [Lecture: Introduction to Asynchronous I/O]()
+* [Lecture: Introduction to Asynchronous I/O]
 * [Review Video](https://www.youtube.com/watch?v=v_lhkZ849jk)
-* [Live Q & A]()
+* [Live Q & A]
