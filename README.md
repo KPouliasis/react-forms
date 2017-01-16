@@ -59,3 +59,7 @@
 * [Lecture: Introduction to Asynchronous I/O](https://youtu.be/FfF1nYeV9lo)
 * [Review Video](https://www.youtube.com/watch?v=v_lhkZ849jk)
 * [Live Q & A](https://youtu.be/VjxsHx0OaNE)
+
+### Twitter.js
+
+* [Lecture: HTTP and Express.js](https://youtu.be/SGQ5Qt9-ZOE)
