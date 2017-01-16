@@ -53,6 +53,9 @@
 * [Lecture](https://youtu.be/1X-OFzVegGg)
 * [Live Review](https://youtu.be/LgYFahVv6nA)
 
-### Introduction to Node.js
+### Node-Shell
 
-* [Lecture](https://youtu.be/pdcNepwem1M)
+* [Lecture: Introduction to node.js](https://youtu.be/pdcNepwem1M)
+* [Lecture: Introduction to Asynchronous I/O]()
+* [Review Video](https://www.youtube.com/watch?v=v_lhkZ849jk)
+* [Live Q & A]()
