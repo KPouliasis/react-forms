@@ -46,7 +46,7 @@
 ### Sorting and Algorithm Analysis
 
 * [Lecture: Algorithms and Heuristics, Big O, Bubble and Merge Sort](https://youtu.be/6kYTVg4bHzQ)
-* [Video Review: Sorting and TDD](https://www.youtube.com/watch?v=Dz0NkaBp-FM)
+* [Video Review](https://www.youtube.com/watch?v=Dz0NkaBp-FM)
 
 ### Game of Life
 
@@ -57,9 +57,10 @@
 
 * [Lecture: Introduction to node.js](https://youtu.be/pdcNepwem1M)
 * [Lecture: Introduction to Asynchronous I/O](https://youtu.be/FfF1nYeV9lo)
-* [Review Video](https://www.youtube.com/watch?v=v_lhkZ849jk)
+* [Video Review](https://www.youtube.com/watch?v=v_lhkZ849jk)
 * [Live Q & A](https://youtu.be/VjxsHx0OaNE)
 
 ### Twitter.js
 
 * [Lecture: HTTP and Express.js](https://youtu.be/SGQ5Qt9-ZOE)
+* [Video Review](https://youtu.be/0NvankAwgHU)
