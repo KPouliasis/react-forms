@@ -64,3 +64,7 @@
 
 * [Lecture: HTTP and Express.js](https://youtu.be/SGQ5Qt9-ZOE)
 * [Video Review](https://youtu.be/0NvankAwgHU)
+
+### SQL
+
+* [Lecture: Intro to Databases](https://youtu.be/Ut5fEuC5dm8)
