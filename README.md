@@ -68,3 +68,4 @@
 ### SQL
 
 * [Lecture: Intro to Databases](https://youtu.be/Ut5fEuC5dm8)
+* [Review Video](https://www.youtube.com/watch?v=meRYC47giig)
