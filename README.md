@@ -57,14 +57,14 @@
 * [Lecture](https://youtu.be/1X-OFzVegGg)
 * [Live Review](https://youtu.be/LgYFahVv6nA)
 
-### Node-Shell
+### Node-Shell (Node)
 
 * [Lecture: Introduction to node.js](https://youtu.be/pdcNepwem1M)
 * [Lecture: Introduction to Asynchronous I/O](https://youtu.be/FfF1nYeV9lo)
 * [Video Review](https://www.youtube.com/watch?v=v_lhkZ849jk)
 * [Live Q & A](https://youtu.be/VjxsHx0OaNE)
 
-### Twitter.js
+### Twitter.js (Express.js)
 
 * [Lecture: HTTP and Express.js](https://youtu.be/SGQ5Qt9-ZOE)
 * [Video Review](https://youtu.be/0NvankAwgHU)
@@ -73,3 +73,7 @@
 
 * [Lecture: Intro to Databases](https://youtu.be/Ut5fEuC5dm8)
 * [Review Video](https://www.youtube.com/watch?v=meRYC47giig)
+
+### Twitter.sql (Node-Postgres)
+
+* [Lecture](https://youtu.be/PSxADtRTyZU)
