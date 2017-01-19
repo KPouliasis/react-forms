@@ -2,11 +2,15 @@
 
 * [Name Game](https://youtu.be/TBOC_PQRyNs)
 
-## CodeWars
+### CodeWars
 
 * [Gist of Foundations practice problems](https://gist.github.com/joedotjs/7614f84264bf20e49d39)
 * [For the Sake of Argument](https://www.youtube.com/watch?v=usyFqZQzM4U)
 * [Sum Array with Reduce](https://www.youtube.com/watch?v=qRwD2RueqJM)
+
+### Misc
+
+* [Gist](https://gist.github.com/glebec/8a0d06e54a4b3f95a33392f948e97b6a) and [Lecture](https://youtu.be/wVrDhVi7bn8): Debugging
 
 ## Foundations
 
