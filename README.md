@@ -77,3 +77,4 @@
 ### Twitter.sql (Node-Postgres)
 
 * [Lecture](https://youtu.be/PSxADtRTyZU)
+* [Live Review](https://youtu.be/_P4iXLrx0u8)
