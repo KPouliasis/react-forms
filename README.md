@@ -8,9 +8,10 @@
 * [For the Sake of Argument](https://www.youtube.com/watch?v=usyFqZQzM4U)
 * [Sum Array with Reduce](https://www.youtube.com/watch?v=qRwD2RueqJM)
 
-### Misc
+### CS Saturdays & Miscellaneous
 
 * [Gist](https://gist.github.com/glebec/8a0d06e54a4b3f95a33392f948e97b6a) and [Lecture](https://youtu.be/wVrDhVi7bn8): Debugging
+* [CS Saturday I: Compilers](https://www.youtube.com/playlist?list=PLx0iOsdUOUmnE1JOFgfOvdnfp9lhrLXjv)
 
 ## Foundations
 
