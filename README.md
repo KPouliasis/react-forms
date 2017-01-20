@@ -73,7 +73,7 @@
 ### SQL
 
 * [Lecture: Intro to Databases](https://youtu.be/Ut5fEuC5dm8)
-* [Review Video](https://www.youtube.com/watch?v=meRYC47giig)
+* [Video Review](https://www.youtube.com/watch?v=meRYC47giig)
 
 ### Twitter.sql (Node-Postgres)
 
@@ -83,3 +83,4 @@
 ### Practical Promises
 
 * [Lecture](https://youtu.be/k4PJnyv0FOo)
+* [Video Review](https://youtu.be/fm9WQN2Nqyw)
