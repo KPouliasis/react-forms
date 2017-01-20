@@ -84,3 +84,7 @@
 
 * [Lecture](https://youtu.be/k4PJnyv0FOo)
 * [Video Review](https://youtu.be/fm9WQN2Nqyw)
+
+### Wikistack/Sequelize
+
+* [Lecture](https://youtu.be/0c0KKbZglCc)
