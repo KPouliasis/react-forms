@@ -124,6 +124,7 @@ function problemC () {
 
   Promise.all(arrayOfPromises)
   .then(function(results) {
+    results.forEach(green);
     console.log('done!');
   });
 
