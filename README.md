@@ -78,3 +78,7 @@
 
 * [Lecture](https://youtu.be/PSxADtRTyZU)
 * [Live Review](https://youtu.be/_P4iXLrx0u8)
+
+### Practical Promises
+
+* [Lecture](https://youtu.be/k4PJnyv0FOo)
