@@ -12,6 +12,7 @@
 
 * [Gist](https://gist.github.com/glebec/8a0d06e54a4b3f95a33392f948e97b6a) and [Lecture](https://youtu.be/wVrDhVi7bn8): Debugging
 * [CS Saturday I: Compilers](https://www.youtube.com/playlist?list=PLx0iOsdUOUmnE1JOFgfOvdnfp9lhrLXjv)
+* [FQL: Intro Lecture](https://youtu.be/NUAwLKJrr3k)
 
 ## Foundations
 
