@@ -153,6 +153,30 @@ Normally this is a bad idea: our javascript program can't "keep going" onto the 
 
 # Indexing
 
-What is it? More or less another table that refers to the original. This other, index table has column values as keys and indexes / ids as values.
+## What is it?
+
+More or less another table that refers to the original. This other, index table has column values as keys and indexes / ids as values.
 
 The whole point is to make queries faster. Think about a glossary.
+
+## How to create it
+
+To create a hashed index table for a given column: go through all the rows, looking for the value at that column name. Add that value as a column in your index table. Add that row's index/id as a value to the index table entry you are creating.
+
+## How to use it
+
+To use that index to speed up the where query: look up stored index/id list for that index table for a given value (e.g. "year index table, value 2000"). Loop through those ids and gather the corresponding rows from the main table. If there are remaining criteria, check them as normal on the subset of rows you already have.
+
+## Runtime and tradeoffs
+
+* Normal table scan: O(n)
+* Indexed query lookup: O(log n) for sorted index
+* Indexed query lookup: O(1) for hashed index
+
+Indexing costs...
+
+* Space (more space per index table)
+* Insertion time
+* Update time
+
+So indexing is not always the way to go.
