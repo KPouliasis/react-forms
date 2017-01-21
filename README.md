@@ -9,7 +9,9 @@
 #### CS Saturdays
 
 * [CS Sat I: Compilers: Review](https://www.youtube.com/playlist?list=PLx0iOsdUOUmnE1JOFgfOvdnfp9lhrLXjv)
-* [CS Sat II: FQL: Intro Lecture](https://youtu.be/NUAwLKJrr3k)
+* [CS Sat II FQL - Intro Lecture](https://youtu.be/NUAwLKJrr3k)
+* CS Sat II FQL - Reivew Parts I and II (video link coming soon) and [review solution diff](https://github.com/FullstackAcademy/1701-FSA-NY-Library/commit/19a5fcc3fe7a8cfab0ad4811a18a8ff1112f1ec7)
+* [CS Sat II FQL - Review Parts III and IV (previous cohort)](https://youtu.be/la8lpWPTwxA) and [full solution diff](https://github.com/FullstackAcademy/1701-FSA-NY-Library/commit/1b59e27dee697b4186db2ea76262aaec94087254)
 
 #### Concept Reviews
 
