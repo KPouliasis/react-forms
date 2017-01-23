@@ -85,6 +85,7 @@
 
 * [Lecture: Intro to Databases](https://youtu.be/Ut5fEuC5dm8)
 * [Video Review](https://www.youtube.com/watch?v=meRYC47giig)
+* [Review Q & A](https://youtu.be/osneV04fRB8)
 
 ### Twitter.sql (Node-Postgres)
 
