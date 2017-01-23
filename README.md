@@ -99,3 +99,5 @@
 ### Wikistack/Sequelize
 
 * [Lecture](https://youtu.be/0c0KKbZglCc)
+* [Review (part 1)](https://www.youtube.com/watch?v=stTJmJ-uGtg)
+* [Review (part 2)](https://www.youtube.com/watch?v=7iPyaokenlg)
