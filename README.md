@@ -108,3 +108,7 @@
 * [Lecture](https://youtu.be/4QZtegdY3U0)
 * [Live Review (part 1)](https://youtu.be/a3xhapob_I0)
 * [Live Review (part 2)](https://youtu.be/HX4mrMMOOkA)
+
+### Pledge (Promise Mechanics)
+
+* [Lecture](https://youtu.be/8ChU2otqRcA)
