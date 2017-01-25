@@ -102,3 +102,9 @@
 * [Lecture](https://youtu.be/0c0KKbZglCc)
 * [Review (part 1)](https://www.youtube.com/watch?v=stTJmJ-uGtg)
 * [Review (part 2)](https://www.youtube.com/watch?v=7iPyaokenlg)
+
+### Wikistack Testing
+
+* [Lecture](https://youtu.be/4QZtegdY3U0)
+* [Live Review (part 1)](https://youtu.be/a3xhapob_I0)
+* [Live Review (part 2)](https://youtu.be/HX4mrMMOOkA)
