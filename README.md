@@ -114,3 +114,4 @@
 * [Lecture](https://youtu.be/8ChU2otqRcA)
 * [Live Review (part 1: Ch. 1–3)](https://youtu.be/_v22vGzIS4w)
 * [Gist: some alternative binding solutions](https://gist.github.com/glebec/ee3cdcd3080d998eb6d9579a3c891ea3)
+* [Live Review (part 2: Ch. 4, small bit of 5)](https://youtu.be/L1fX5nRjjfY)
