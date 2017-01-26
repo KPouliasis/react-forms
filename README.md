@@ -6,6 +6,13 @@
 
 * Debugging: [Gist](https://gist.github.com/glebec/8a0d06e54a4b3f95a33392f948e97b6a) and [Lecture](https://youtu.be/wVrDhVi7bn8)
 
+#### Checkpoints
+
+##### Express (Self-Checkpoint)
+
+* [Video Review](https://www.youtube.com/watch?v=op6AcWbwwbE)
+* [Live Review](https://youtu.be/z4_2PfGlP4E)
+
 #### CS Saturdays
 
 * [CS Sat I: Compilers: Review](https://www.youtube.com/playlist?list=PLx0iOsdUOUmnE1JOFgfOvdnfp9lhrLXjv)
