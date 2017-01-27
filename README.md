@@ -13,6 +13,11 @@
 * [Video Review](https://www.youtube.com/watch?v=op6AcWbwwbE)
 * [Live Review](https://youtu.be/z4_2PfGlP4E)
 
+##### Express-Sequelize
+
+* [Gist: Sequelize associations](https://gist.github.com/joedotjs/4a57c5e2037fa15a25fe52131a21ae91)
+* [Live Demo: Sequelize validations, class & instance methods, promises](https://youtu.be/WU2IFoMUkp4)
+
 #### CS Saturdays
 
 * [CS Sat I: Compilers: Review](https://www.youtube.com/playlist?list=PLx0iOsdUOUmnE1JOFgfOvdnfp9lhrLXjv)
