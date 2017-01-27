@@ -15,6 +15,7 @@
 
 ##### Express-Sequelize
 
+* [Repo: System check tool](https://github.com/FullstackAcademy/system-check)
 * [Gist: Sequelize associations](https://gist.github.com/joedotjs/4a57c5e2037fa15a25fe52131a21ae91)
 * [Live Demo: Sequelize validations, class & instance methods, promises](https://youtu.be/WU2IFoMUkp4)
 
