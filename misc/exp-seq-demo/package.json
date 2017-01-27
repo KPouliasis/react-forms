@@ -1,0 +1,27 @@
+{
+  "name": "exp-seq-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=db,app,http nodemon -e html,js server/app"
+  },
+  "author": "Gabriel Lebec <glebec@gmail.com> (https://github.com/glebec)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "chalk": "^1.1.3",
+    "debug": "^2.6.0",
+    "express": "^4.14.0",
+    "milligram": "^1.3.0",
+    "nunjucks": "^3.0.0",
+    "pg": "^6.1.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.30.0",
+    "volleyball": "^1.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
