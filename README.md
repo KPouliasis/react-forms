@@ -134,7 +134,10 @@
 #### TP: Static
 
 * [Lecture: mob programming](https://youtu.be/PcNQMiuCBXY)
+* [Live Review](https://youtu.be/AVv495nPzm4)
 
 #### TP: Live (jQuery)
+
+* [Lecture: jQuery](https://youtu.be/6aJYo33wUfg)
 
 #### TP: Persistence (AJAX)
