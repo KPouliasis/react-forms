@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>jQuery Is Awesome!</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <h1>Goodbye</h1>
+    <input type="text" id="cool-input"/>
+    <ul>
+      <li>Harry</li>
+      <li>Hermione</li>
+      <li>Ron</li>
+    </ul>
+    <button id="add">Add Draco</button>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+      console.log('Hello');
+      const $button = $('#add');
+      const $people = $('ul');
+      /** Event Delegation
+       *  "When someone clicks an <li> descendant of <ul>, run this function."
+       *  BUT! The click handler is only attached to the <ul>, not the <li>s
+       *  themselves. So you can add and remove <li>s and it still works —
+       *  the <ul> acts as a kind of click-handler-manager for its children.
+       */
+      $('ul').on('click', 'li', function () {
+        const $clickedLiElement = $(this);
+        console.log('Hello, I am ' + $clickedLiElement.text());
+      });
+      $people.each(function (idx, person) {
+        console.log('A person was born:', person);
+      });
+      $button.on('click', function (evt) {
+        evt.preventDefault();
+        const $newPerson = $('<li>Draco</li>');
+        $people.append($newPerson);
+      });
+    </script>
+  </body>
+</html>
