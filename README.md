@@ -129,7 +129,7 @@
 * [Gist: some alternative binding solutions](https://gist.github.com/glebec/ee3cdcd3080d998eb6d9579a3c891ea3)
 * [Live Review (part 2: Ch. 4, small bit of 5)](https://youtu.be/L1fX5nRjjfY)
 
-### Trip Planner (Full-Stack app)
+### Trip Planner (Full-Stack app, no front-end framework)
 
 #### TP: Static
 
@@ -139,5 +139,6 @@
 #### TP: Live (jQuery)
 
 * [Lecture: jQuery](https://youtu.be/6aJYo33wUfg)
+* [Video Review](https://youtu.be/gajJ9BHLiKA)
 
 #### TP: Persistence (AJAX)
