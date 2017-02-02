@@ -129,6 +129,12 @@
 * [Gist: some alternative binding solutions](https://gist.github.com/glebec/ee3cdcd3080d998eb6d9579a3c891ea3)
 * [Live Review (part 2: Ch. 4, small bit of 5)](https://youtu.be/L1fX5nRjjfY)
 
+### Shoestring (CSS)
+
+* [Lecture part1](https://youtu.be/kZbN41kvTCk)
+* [Lecture part2](https://youtu.be/gAnIiohJ__I)
+* [Live Review](https://youtu.be/NZmmI0M2l0Q)
+
 ### Trip Planner (Full-Stack app, no front-end framework)
 
 #### TP: Static
