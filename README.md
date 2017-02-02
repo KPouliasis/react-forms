@@ -142,3 +142,6 @@
 * [Video Review](https://youtu.be/gajJ9BHLiKA)
 
 #### TP: Persistence (AJAX)
+
+* [Lecture: AJAX](https://youtu.be/PMhE2SWG3X4)
+* [Review](https://www.youtube.com/watch?v=DeFD0EuG4dY)
