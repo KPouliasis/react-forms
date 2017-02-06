@@ -164,3 +164,11 @@
 
 * [Lecture Part I: JSX, React Fundamentals](https://youtu.be/tfy2rYgat9Q)
 * [Lecture Part II: React Components](https://youtu.be/cSYeZTpkg3s)
+
+#### 2–5. Upcoming…
+
+### Auther (Authentication — Upcoming)
+
+## Senior Phase
+
+* [Preview](https://youtu.be/2XQ-E4BcrCs)
