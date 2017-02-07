@@ -164,6 +164,7 @@
 
 * [Lecture Part I: JSX, React Fundamentals](https://youtu.be/tfy2rYgat9Q)
 * [Lecture Part II: React Components](https://youtu.be/cSYeZTpkg3s)
+* [Live Review](https://youtu.be/kGvMMr-TwVg)
 
 #### 2–5. Upcoming…
 
