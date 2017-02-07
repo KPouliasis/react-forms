@@ -62,6 +62,26 @@
 
 	var _reactRouter = __webpack_require__(203);
 
+	var _puppies = __webpack_require__(266);
+
+	var _puppies2 = _interopRequireDefault(_puppies);
+
+	var _puppy = __webpack_require__(268);
+
+	var _puppy2 = _interopRequireDefault(_puppy);
+
+	var _kittens = __webpack_require__(269);
+
+	var _kittens2 = _interopRequireDefault(_kittens);
+
+	var _kitten = __webpack_require__(270);
+
+	var _kitten2 = _interopRequireDefault(_kitten);
+
+	var _navLink = __webpack_require__(267);
+
+	var _navLink2 = _interopRequireDefault(_navLink);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -70,147 +90,107 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Home = function (_Component) {
-	  _inherits(Home, _Component);
+	var Home = function Home(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h3',
+	      null,
+	      ' Where should we go now? '
+	    )
+	  );
+	};
 
-	  function Home() {
-	    _classCallCheck(this, Home);
+	var App = function (_Component) {
+	  _inherits(App, _Component);
 
-	    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
+	  function App() {
+	    _classCallCheck(this, App);
 
-	    _this.state = { name: 'hallelujah' };
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
-	    _this.getAllDemPuppies = _this.getAllDemPuppies.bind(_this);
+	    _this.state = { allKittens: [], selectedKitten: {} };
+	    _this.getAllKittens = _this.getAllKittens.bind(_this);
+	    _this.getSingleKitten = _this.getSingleKitten.bind(_this);
 	    return _this;
 	  }
 
-	  _createClass(Home, [{
-	    key: 'getAllDemPuppies',
-	    value: function getAllDemPuppies() {
+	  _createClass(App, [{
+	    key: 'getAllKittens',
+	    value: function getAllKittens() {
 	      var _this2 = this;
 
-	      _axios2.default.get("/api/puppies").then(function (response) {
+	      _axios2.default.get('/api/kittens').then(function (response) {
 	        return response.data;
-	      }).then(function (puppyData) {
-	        return _this2.setState({ puppyData: puppyData });
-	      });
+	      }).then(function (allKittens) {
+	        _this2.setState({ allKittens: allKittens });
+	      }).catch(console.error.bind(console));
+	    }
+	  }, {
+	    key: 'getSingleKitten',
+	    value: function getSingleKitten(name) {
+	      var _this3 = this;
+
+	      _axios2.default.get('/api/kittens/' + name).then(function (response) {
+	        return response.data;
+	      }).then(function (selectedKitten) {
+	        _this3.setState({ selectedKitten: selectedKitten });
+	      }).catch(console.error.bind(console));
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        ' Baby Animales',
-	        this.props.children && (0, _react.cloneElement)(this.props.children, {
-	          getAllDemPuppies: this.getAllDemPuppies,
-	          puppyData: this.state.puppyData
-	        })
-	      );
-	    }
-	  }]);
+	      var props = { getAllKittens: this.getAllKittens,
+	        getSingleKitten: this.getSingleKitten,
+	        allKittens: this.state.allKittens,
+	        selectedKitten: this.state.selectedKitten };
 
-	  return Home;
-	}(_react.Component);
-
-	var Puppies = function (_Component2) {
-	  _inherits(Puppies, _Component2);
-
-	  function Puppies() {
-	    _classCallCheck(this, Puppies);
-
-	    return _possibleConstructorReturn(this, (Puppies.__proto__ || Object.getPrototypeOf(Puppies)).apply(this, arguments));
-	  }
-
-	  _createClass(Puppies, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      this.props.getAllDemPuppies();
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var puppyData = this.props.puppyData;
 	      return _react2.default.createElement(
 	        'div',
 	        null,
 	        _react2.default.createElement(
-	          'h3',
+	          'h1',
 	          null,
-	          'Puppies!!!'
+	          ' Baby Animals '
 	        ),
-	        puppyData && puppyData.map(function (puppy) {
-	          return _react2.default.createElement(
-	            'div',
-	            { key: puppy },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/puppy/' + puppy },
-	              puppy
-	            )
-	          );
-	        }),
-	        this.props.children
-	      );
-	    }
-	  }]);
-
-	  return Puppies;
-	}(_react.Component);
-
-	var SinglePuppy = function (_Component3) {
-	  _inherits(SinglePuppy, _Component3);
-
-	  function SinglePuppy() {
-	    _classCallCheck(this, SinglePuppy);
-
-	    var _this4 = _possibleConstructorReturn(this, (SinglePuppy.__proto__ || Object.getPrototypeOf(SinglePuppy)).call(this));
-
-	    _this4.state = {};
-	    return _this4;
-	  }
-
-	  _createClass(SinglePuppy, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      var _this5 = this;
-
-	      _axios2.default.get('/api/puppies/' + this.props.params.puppyName).then(function (res) {
-	        return res.data;
-	      }).then(function (selectedPuppy) {
-	        return _this5.setState({ selectedPuppy: selectedPuppy });
-	      });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var selectedPuppy = this.state.selectedPuppy;
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        selectedPuppy ? _react2.default.createElement(
-	          'div',
-	          null,
+	        _react2.default.createElement(
+	          'ul',
+	          { role: 'nav' },
 	          _react2.default.createElement(
-	            'h4',
+	            'li',
 	            null,
-	            selectedPuppy.name
+	            _react2.default.createElement(
+	              _navLink2.default,
+	              { to: '/', onlyActiveOnIndex: true },
+	              'Home'
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
+	            'li',
 	            null,
-	            _react2.default.createElement('img', { src: selectedPuppy.image })
+	            _react2.default.createElement(
+	              _navLink2.default,
+	              { to: '/puppies' },
+	              'Puppies'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _navLink2.default,
+	              { to: '/kittens' },
+	              'Kittens'
+	            )
 	          )
-	        ) : _react2.default.createElement(
-	          'h3',
-	          null,
-	          'Loading...'
-	        )
+	        ),
+	        this.props.children && (0, _react.cloneElement)(this.props.children, props)
 	      );
 	    }
 	  }]);
 
-	  return SinglePuppy;
+	  return App;
 	}(_react.Component);
 
 	_reactDom2.default.render(_react2.default.createElement(
@@ -218,13 +198,13 @@
 	  { history: _reactRouter.browserHistory },
 	  _react2.default.createElement(
 	    _reactRouter.Route,
-	    { path: '/', component: Home },
-	    _react2.default.createElement(
-	      _reactRouter.Route,
-	      { path: '/puppies', component: Puppies },
-	      _react2.default.createElement(_reactRouter.Route, { path: '/puppies/:puppyName', component: SinglePuppy })
-	    ),
-	    _react2.default.createElement(_reactRouter.IndexRedirect, { to: '/puppies' })
+	    { path: '/', component: App },
+	    _react2.default.createElement(_reactRouter.Route, { path: '/puppies', component: _puppies2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/puppies/:name', component: _puppy2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/kittens', component: _kittens2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/kittens/:name', component: _kitten2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/home', component: Home }),
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: Home })
 	  )
 	), document.getElementById('app'));
 
@@ -28775,6 +28755,359 @@
 
 	exports.default = (0, _createRouterHistory2.default)(_createHashHistory2.default);
 	module.exports = exports['default'];
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _axios = __webpack_require__(178);
+
+	var _axios2 = _interopRequireDefault(_axios);
+
+	var _navLink = __webpack_require__(267);
+
+	var _navLink2 = _interopRequireDefault(_navLink);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Puppies = function (_Component) {
+	  _inherits(Puppies, _Component);
+
+	  function Puppies() {
+	    _classCallCheck(this, Puppies);
+
+	    var _this = _possibleConstructorReturn(this, (Puppies.__proto__ || Object.getPrototypeOf(Puppies)).call(this));
+
+	    _this.state = {};
+	    return _this;
+	  }
+
+	  _createClass(Puppies, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _this2 = this;
+
+	      _axios2.default.get('/api/puppies').then(function (response) {
+	        return response.data;
+	      }).then(function (puppyData) {
+	        return _this2.setState({ puppyData: puppyData });
+	      }).catch(console.error.bind(console));
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var puppyData = this.state.puppyData;
+
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Puppies!!!'
+	        ),
+	        puppyData && puppyData.map(function (puppy) {
+	          return _react2.default.createElement(
+	            'div',
+	            { key: puppy },
+	            _react2.default.createElement(
+	              _navLink2.default,
+	              { to: '/puppies/' + puppy },
+	              puppy
+	            )
+	          );
+	        })
+	      );
+	    }
+	  }]);
+
+	  return Puppies;
+	}(_react.Component);
+
+	exports.default = Puppies;
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _reactRouter = __webpack_require__(203);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var NavLink = function NavLink(props) {
+		/* React is taking advantage of the ES7 proposed support for the spread operator `...` for Objects (not just iterables as in ES6).*/
+		return _react2.default.createElement(_reactRouter.Link, _extends({}, props, { activeStyle: { color: 'pink' } }));
+	};
+
+	exports.default = NavLink;
+
+/***/ },
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _axios = __webpack_require__(178);
+
+	var _axios2 = _interopRequireDefault(_axios);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SinglePuppy = function (_Component) {
+	  _inherits(SinglePuppy, _Component);
+
+	  function SinglePuppy() {
+	    _classCallCheck(this, SinglePuppy);
+
+	    var _this = _possibleConstructorReturn(this, (SinglePuppy.__proto__ || Object.getPrototypeOf(SinglePuppy)).call(this));
+
+	    _this.state = {};
+	    return _this;
+	  }
+
+	  _createClass(SinglePuppy, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _this2 = this;
+
+	      _axios2.default.get('/api/puppies/' + this.props.routeParams.name).then(function (response) {
+	        return response.data;
+	      }).then(function (puppy) {
+	        _this2.setState({ puppy: puppy });
+	      }).catch(console.error.bind(console));
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      // If we have the following as well, the componentDidMount is the same, so nothing is reset
+	      // <Link to={`/puppy/Taylor`}>Taylor</ Link> 
+	      var puppy = this.state.puppy;
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        puppy ? _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            puppy.name
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement('img', { src: puppy.image })
+	          )
+	        ) : _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Loading...'
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SinglePuppy;
+	}(_react.Component);
+
+	exports.default = SinglePuppy;
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _navLink = __webpack_require__(267);
+
+	var _navLink2 = _interopRequireDefault(_navLink);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Kittens = function (_Component) {
+	  _inherits(Kittens, _Component);
+
+	  function Kittens() {
+	    _classCallCheck(this, Kittens);
+
+	    return _possibleConstructorReturn(this, (Kittens.__proto__ || Object.getPrototypeOf(Kittens)).apply(this, arguments));
+	  }
+
+	  _createClass(Kittens, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.props.getAllKittens();
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      console.log();
+	      var kittenData = this.props.allKittens;
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Kittens!!!'
+	        ),
+	        kittenData && kittenData.map(function (kitten) {
+	          return _react2.default.createElement(
+	            'div',
+	            { key: kitten },
+	            _react2.default.createElement(
+	              _navLink2.default,
+	              { to: '/kittens/' + kitten },
+	              kitten
+	            )
+	          );
+	        })
+	      );
+	    }
+	  }]);
+
+	  return Kittens;
+	}(_react.Component);
+
+	exports.default = Kittens;
+
+/***/ },
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _axios = __webpack_require__(178);
+
+	var _axios2 = _interopRequireDefault(_axios);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SingleKitten = function (_Component) {
+	  _inherits(SingleKitten, _Component);
+
+	  function SingleKitten() {
+	    _classCallCheck(this, SingleKitten);
+
+	    return _possibleConstructorReturn(this, (SingleKitten.__proto__ || Object.getPrototypeOf(SingleKitten)).apply(this, arguments));
+	  }
+
+	  _createClass(SingleKitten, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.props.getSingleKitten(this.props.routeParams.name);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var kitten = this.props.selectedKitten;
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        kitten ? _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            kitten.name
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement('img', { src: kitten.image })
+	          )
+	        ) : _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Loading...'
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SingleKitten;
+	}(_react.Component);
+
+	exports.default = SingleKitten;
 
 /***/ }
 /******/ ]);
