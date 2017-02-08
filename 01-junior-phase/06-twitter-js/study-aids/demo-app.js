@@ -185,7 +185,7 @@ function jsonBodyParser (request, response, next) {
 		request.anything = allData;
 		next();
 	});
-};
+}
 app.use(jsonBodyParser);
 app.use(function (request, response, next) {
 	console.log(request.anything);
