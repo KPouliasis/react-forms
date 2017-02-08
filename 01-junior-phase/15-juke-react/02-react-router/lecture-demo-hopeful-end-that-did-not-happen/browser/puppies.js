@@ -8,6 +8,7 @@ export default class Puppies extends Component {
     this.state = {};
   }
   componentDidMount(){
+    // We have individual state here, which is great and localized. Also, could be confusing if we don't remember that we have localized states
     axios.get('/api/puppies')
       .then(response => response.data)
       .then(puppyData => this.setState({puppyData}))

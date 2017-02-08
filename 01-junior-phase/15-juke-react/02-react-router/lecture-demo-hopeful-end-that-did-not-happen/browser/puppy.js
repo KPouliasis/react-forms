@@ -13,8 +13,6 @@ export default class SinglePuppy extends Component {
       .catch(console.error.bind(console))
   }
   render () {
-    // If we have the following as well, the componentDidMount is the same, so nothing is reset
-    // <Link to={`/puppy/Taylor`}>Taylor</ Link> 
     const puppy = this.state.puppy;
     return (
         <div>

@@ -3,6 +3,8 @@ import axios from 'axios';
 
 export default class SingleKitten extends Component {
   componentDidMount () {
+    // We need to send in routeParams.name because `this` context is important
+      // Notice that we can just call the function we bound and sent in from `app.js`
     this.props.getSingleKitten(this.props.routeParams.name);
   }
   render () {
