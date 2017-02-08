@@ -166,7 +166,10 @@
 * [Lecture Part II: React Components](https://youtu.be/cSYeZTpkg3s)
 * [Live Review](https://youtu.be/kGvMMr-TwVg)
 
-#### 2–5. Upcoming…
+#### 2. React-Router (frontend routing)
+* [Lecture](https://youtu.be/sO4OYd5qlwE)
+
+#### 3–5. Upcoming…
 
 ### Auther (Authentication — Upcoming)
 
